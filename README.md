@@ -24,12 +24,32 @@ pip3 install nornir_jinja2
 
 ## Mandatory files:
 
-config
+config:
 
 hosts
 groups
 defaults
 
+## Generate configuration in Python:
+
+```python
+nr = InitNornir(
+    runner ={
+        "plugin" : "threaded",
+        "options": {
+            "num_workers": 100,
+        }
+    },
+    inventory={
+        "plugin": "SimpleInventory",
+        "options": {
+            "host_file": "/opt/salt-fileserver/prelude/inventory/bms/hosts_bms_5000.yaml",
+            "group_file": "/var/tmp/groups.yaml",
+            "defaults_file": "/var/tmp/defaults.yaml",
+        }
+    }
+)
+```
 
 ## logging in Nornir
 
