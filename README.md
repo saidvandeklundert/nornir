@@ -36,11 +36,6 @@ defaults
 Log output is directed to `nornir.log`.
 
 
-## statistics
-
-Statistics writing facts for IOS switches:
-500 devices in 2m2
-1000 devices in 3m43
 
 
 
@@ -86,11 +81,11 @@ batch_3 = nr.filter(F(tags__contains='batch_3'))
 >>> nr.inventory.hosts['bms_0'].hostname
 '10.0.189.107'
 >>> nr.inventory.hosts['bms_0'].password
-'salty_mcsaltface'
+'xxx'
 >>> nr.inventory.hosts['bms_0'].username
-'salt_nettools'
+'xxx'
 >>> nr.inventory.groups['cisco'].username
-'salt_nettools'
+'xxx'
 
 
 >>> nr.filter(hostname="10.0.189.107").inventory.hosts.keys()
