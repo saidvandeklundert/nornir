@@ -1,18 +1,25 @@
+## Nornir overview
+
+Automation framework with the following characteristics:
+- minimal
+- pure Python
+- total freedom
+
+
+
 ## installing nornir
 
+Can be installed using pip:
+```
 pip3 install nornir
+```
+
+Nornir has plugins available that make it easier to interface with certain other libraries. Installing some plugins:
+```
 pip3 install nornir_napalm
 pip3 install nornir_utils
 pip3 install nornir_jinja2
-
-
-
-
-## statistics
-
-Statistics writing facts for BMS switches:
-500 devices in 2m2
-1000 devices in 3m43
+```
 
 
 ## Mandatory files:
@@ -22,6 +29,18 @@ config
 hosts
 groups
 defaults
+
+
+
+
+
+## statistics
+
+Statistics writing facts for IOS switches:
+500 devices in 2m2
+1000 devices in 3m43
+
+
 
 
 ## Filtering
