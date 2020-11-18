@@ -43,7 +43,7 @@ nr = InitNornir(
     inventory={
         "plugin": "SimpleInventory",
         "options": {
-            "host_file": "/opt/salt-fileserver/prelude/inventory/bms/hosts_bms_5000.yaml",
+            "host_file": "/var/tmp/hosts.yaml",
             "group_file": "/var/tmp/groups.yaml",
             "defaults_file": "/var/tmp/defaults.yaml",
         }
