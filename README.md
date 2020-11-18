@@ -31,7 +31,9 @@ groups
 defaults
 
 
+## logging in Nornir
 
+Log output is directed to `nornir.log`.
 
 
 ## statistics
@@ -97,7 +99,14 @@ dict_keys(['bms_0'])
 nr.inventory.children_of_group("cisco")
 
 
-## random
+## Interesting links:
+
+Official documentation:
+https://nornir.readthedocs.io/en/latest/
+
+Discourse group:
+https://nornir.discourse.group/
+
 
 Uses threads to scale:
 (old doc) https://nornir.readthedocs.io/en/latest/plugins/execution_model.html?highlight=execution
