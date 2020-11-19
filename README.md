@@ -19,6 +19,7 @@ Nornir has plugins available that make it easier to interface with certain other
 pip3 install nornir_napalm
 pip3 install nornir_utils
 pip3 install nornir_jinja2
+pip3 install nornir-scrapli
 ```
 
 
