@@ -1,5 +1,4 @@
-```
-sh-4.2# python  /opt/prelude/scripts/test_task_example.py   
+sh-4.2# python  /scripts/test_task_example.py   
 Task example and explanation function.******************************************
 * veos01 ** changed : True *****************************************************
 vvvv Task example and explanation function. ** changed : False vvvvvvvvvvvvvvvvv INFO
@@ -212,7 +211,7 @@ example_arg_2: arg_2
 vvvv example command using NAPALM ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvv INFO
 MultiResult: [Result: "napalm_cli"]
 ---- napalm_cli ** changed : False --------------------------------------------- INFO
-{ 'show hostname': 'Hostname: fas01a.sr01.dal10\nFQDN:     fas01a.sr01.dal10\n',
+{ 'show hostname': 'Hostname: veos02\nFQDN:     veos02\n',
   'show version': ' vEOS\n'
                   'Hardware version:      \n'
                   'Serial number:         \n'
@@ -234,8 +233,8 @@ MultiResult: [Result: "napalm_cli"]
 vvvv example using NAPALM getters ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvv INFO
 MultiResult: [Result: "napalm_get"]
 ---- napalm_get ** changed : False --------------------------------------------- INFO
-{ 'get_facts': { 'fqdn': 'fas01a.sr01.dal10',
-                 'hostname': 'fas01a.sr01.dal10',
+{ 'get_facts': { 'fqdn': 'veos02',
+                 'hostname': 'veos02',
                  'interface_list': [ 'Ethernet1',
                                      'Loopback0',
                                      'Management1',
@@ -519,4 +518,3 @@ MultiResult: [Result: "napalm_configure"]
  interface Management1
 ^^^^ END example configuration using NAPALM ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^^^^ END Task example and explanation function. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-```
