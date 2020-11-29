@@ -1,0 +1,522 @@
+```
+sh-4.2# python  /opt/prelude/scripts/test_task_example.py   
+Task example and explanation function.******************************************
+* veos01 ** changed : True *****************************************************
+vvvv Task example and explanation function. ** changed : False vvvvvvvvvvvvvvvvv INFO
+Example task finished!
+---- Logging example. ** changed : False --------------------------------------- INFO
+Task Logging example. made some log updates
+---- example_task ** changed : False ------------------------------------------- INFO
+Got the following:
+example_arg_1: arg_1
+example_arg_2: arg_2
+---- examine task ** changed : False ------------------------------------------- INFO
+{ 'default content': { 'connection_options': {},
+                       'data': {},
+                       'hostname': None,
+                       'password': 'password',
+                       'platform': None,
+                       'port': None,
+                       'username': 'admin'},
+  'groups content': { 'connection_options': {},
+                      'data': {},
+                      'groups': [],
+                      'hostname': None,
+                      'name': 'arista_eapi',
+                      'password': 'password',
+                      'platform': 'eos',
+                      'port': 443,
+                      'username': 'admin'},
+  'host dict': { 'connection_options': {},
+                 'data': {},
+                 'groups': ['arista_eapi'],
+                 'hostname': '10.254.169.50',
+                 'name': 'veos01',
+                 'password': 'password',
+                 'platform': 'eos',
+                 'port': 443,
+                 'username': 'admin'},
+  'host methods': [ '__bool__',
+                    '__class__',
+                    '__delattr__',
+                    '__dir__',
+                    '__doc__',
+                    '__eq__',
+                    '__format__',
+                    '__ge__',
+                    '__getattribute__',
+                    '__getitem__',
+                    '__gt__',
+                    '__hash__',
+                    '__init__',
+                    '__init_subclass__',
+                    '__iter__',
+                    '__le__',
+                    '__len__',
+                    '__lt__',
+                    '__module__',
+                    '__ne__',
+                    '__new__',
+                    '__reduce__',
+                    '__reduce_ex__',
+                    '__repr__',
+                    '__setattr__',
+                    '__setitem__',
+                    '__sizeof__',
+                    '__slots__',
+                    '__str__',
+                    '__subclasshook__',
+                    '_get_connection_options_recursively',
+                    '_has_parent_group_by_name',
+                    '_has_parent_group_by_object',
+                    '_resolve_data',
+                    'close_connection',
+                    'close_connections',
+                    'connection_options',
+                    'connections',
+                    'data',
+                    'defaults',
+                    'dict',
+                    'get',
+                    'get_connection',
+                    'get_connection_parameters',
+                    'groups',
+                    'has_parent_group',
+                    'hostname',
+                    'items',
+                    'keys',
+                    'name',
+                    'open_connection',
+                    'password',
+                    'platform',
+                    'port',
+                    'schema',
+                    'username',
+                    'values'],
+  'task': examine task,
+  'task methods': [ '__class__',
+                    '__delattr__',
+                    '__dict__',
+                    '__dir__',
+                    '__doc__',
+                    '__eq__',
+                    '__format__',
+                    '__ge__',
+                    '__getattribute__',
+                    '__gt__',
+                    '__hash__',
+                    '__init__',
+                    '__init_subclass__',
+                    '__le__',
+                    '__lt__',
+                    '__module__',
+                    '__ne__',
+                    '__new__',
+                    '__reduce__',
+                    '__reduce_ex__',
+                    '__repr__',
+                    '__setattr__',
+                    '__sizeof__',
+                    '__str__',
+                    '__subclasshook__',
+                    '__weakref__',
+                    'copy',
+                    'global_dry_run',
+                    'host',
+                    'is_dry_run',
+                    'name',
+                    'nornir',
+                    'params',
+                    'parent_task',
+                    'processors',
+                    'results',
+                    'run',
+                    'severity_level',
+                    'start',
+                    'task'],
+  'task name': 'examine task',
+  'task type': <class 'nornir.core.task.Task'>}
+---- examine result ** changed : False ----------------------------------------- INFO
+{ 'result': MultiResult: [Result: "examine task"],
+  'result methods': [ '__abstractmethods__',
+                      '__add__',
+                      '__args__',
+                      '__class__',
+                      '__contains__',
+                      '__delattr__',
+                      '__delitem__',
+                      '__dict__',
+                      '__dir__',
+                      '__doc__',
+                      '__eq__',
+                      '__extra__',
+                      '__format__',
+                      '__ge__',
+                      '__getattr__',
+                      '__getattribute__',
+                      '__getitem__',
+                      '__gt__',
+                      '__hash__',
+                      '__iadd__',
+                      '__imul__',
+                      '__init__',
+                      '__init_subclass__',
+                      '__iter__',
+                      '__le__',
+                      '__len__',
+                      '__lt__',
+                      '__module__',
+                      '__mul__',
+                      '__ne__',
+                      '__new__',
+                      '__next_in_mro__',
+                      '__orig_bases__',
+                      '__origin__',
+                      '__parameters__',
+                      '__reduce__',
+                      '__reduce_ex__',
+                      '__repr__',
+                      '__reversed__',
+                      '__rmul__',
+                      '__setattr__',
+                      '__setitem__',
+                      '__sizeof__',
+                      '__slots__',
+                      '__str__',
+                      '__subclasshook__',
+                      '__tree_hash__',
+                      '__weakref__',
+                      '_abc_cache',
+                      '_abc_generic_negative_cache',
+                      '_abc_generic_negative_cache_version',
+                      '_abc_negative_cache',
+                      '_abc_negative_cache_version',
+                      '_abc_registry',
+                      '_gorg',
+                      'append',
+                      'changed',
+                      'clear',
+                      'copy',
+                      'count',
+                      'extend',
+                      'failed',
+                      'index',
+                      'insert',
+                      'name',
+                      'pop',
+                      'raise_on_error',
+                      'remove',
+                      'reverse',
+                      'sort'],
+  'task type': nornir.core.task.MultiResult}
+vvvv example command using NAPALM ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvv INFO
+MultiResult: [Result: "napalm_cli"]
+---- napalm_cli ** changed : False --------------------------------------------- INFO
+{ 'show hostname': 'Hostname: fas01a.sr01.dal10\nFQDN:     fas01a.sr01.dal10\n',
+  'show version': ' vEOS\n'
+                  'Hardware version:      \n'
+                  'Serial number:         \n'
+                  'Hardware MAC address:  444c.a842.c02f\n'
+                  'System MAC address:    444c.a842.c02f\n'
+                  '\n'
+                  'Software image version: 4.24.1.1F\n'
+                  'Architecture:           i686\n'
+                  'Internal build version: 4.24.1.1F-17172302.42411F\n'
+                  'Internal build ID:      '
+                  'cf3ba327-e192-46b4-8e8e-4aeaee798dd2\n'
+                  '\n'
+                  'Uptime:                 8 weeks, 5 days, 17 hours and 51 '
+                  'minutes\n'
+                  'Total memory:           1872580 kB\n'
+                  'Free memory:            741540 kB\n'
+                  '\n'}
+^^^^ END example command using NAPALM ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+vvvv example using NAPALM getters ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvv INFO
+MultiResult: [Result: "napalm_get"]
+---- napalm_get ** changed : False --------------------------------------------- INFO
+{ 'get_facts': { 'fqdn': 'fas01a.sr01.dal10',
+                 'hostname': 'fas01a.sr01.dal10',
+                 'interface_list': [ 'Ethernet1',
+                                     'Loopback0',
+                                     'Management1',
+                                     'Port-Channel1000',
+                                     'Vlan4094'],
+                 'model': 'vEOS',
+                 'os_version': '4.24.1.1F-17172302.42411F',
+                 'serial_number': '',
+                 'uptime': 5332244,
+                 'vendor': 'Arista'}}
+^^^^ END example using NAPALM getters ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+vvvv example configuration using NAPALM ** changed : False vvvvvvvvvvvvvvvvvvvvv INFO
+MultiResult: [Result: "napalm_configure"]
+---- napalm_configure ** changed : True ---------------------------------------- INFO
+@@ -41,6 +41,7 @@
+    channel-group 1000 mode active
+ !
+ interface Loopback0
++   description Nornir
+    ip address 5.5.5.5/32
+ !
+ interface Management1
+^^^^ END example configuration using NAPALM ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^ END Task example and explanation function. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* veos02 ** changed : True *****************************************************
+vvvv Task example and explanation function. ** changed : False vvvvvvvvvvvvvvvvv INFO
+Example task finished!
+---- Logging example. ** changed : False --------------------------------------- INFO
+Task Logging example. made some log updates
+---- example_task ** changed : False ------------------------------------------- INFO
+Got the following:
+example_arg_1: arg_1
+example_arg_2: arg_2
+---- examine task ** changed : False ------------------------------------------- INFO
+{ 'default content': { 'connection_options': {},
+                       'data': {},
+                       'hostname': None,
+                       'password': 'password',
+                       'platform': None,
+                       'port': None,
+                       'username': 'admin'},
+  'groups content': { 'connection_options': {},
+                      'data': {},
+                      'groups': [],
+                      'hostname': None,
+                      'name': 'arista_eapi',
+                      'password': 'password',
+                      'platform': 'eos',
+                      'port': 443,
+                      'username': 'admin'},
+  'host dict': { 'connection_options': {},
+                 'data': {},
+                 'groups': ['arista_eapi'],
+                 'hostname': '10.254.169.51',
+                 'name': 'veos02',
+                 'password': 'password',
+                 'platform': 'eos',
+                 'port': 443,
+                 'username': 'admin'},
+  'host methods': [ '__bool__',
+                    '__class__',
+                    '__delattr__',
+                    '__dir__',
+                    '__doc__',
+                    '__eq__',
+                    '__format__',
+                    '__ge__',
+                    '__getattribute__',
+                    '__getitem__',
+                    '__gt__',
+                    '__hash__',
+                    '__init__',
+                    '__init_subclass__',
+                    '__iter__',
+                    '__le__',
+                    '__len__',
+                    '__lt__',
+                    '__module__',
+                    '__ne__',
+                    '__new__',
+                    '__reduce__',
+                    '__reduce_ex__',
+                    '__repr__',
+                    '__setattr__',
+                    '__setitem__',
+                    '__sizeof__',
+                    '__slots__',
+                    '__str__',
+                    '__subclasshook__',
+                    '_get_connection_options_recursively',
+                    '_has_parent_group_by_name',
+                    '_has_parent_group_by_object',
+                    '_resolve_data',
+                    'close_connection',
+                    'close_connections',
+                    'connection_options',
+                    'connections',
+                    'data',
+                    'defaults',
+                    'dict',
+                    'get',
+                    'get_connection',
+                    'get_connection_parameters',
+                    'groups',
+                    'has_parent_group',
+                    'hostname',
+                    'items',
+                    'keys',
+                    'name',
+                    'open_connection',
+                    'password',
+                    'platform',
+                    'port',
+                    'schema',
+                    'username',
+                    'values'],
+  'task': examine task,
+  'task methods': [ '__class__',
+                    '__delattr__',
+                    '__dict__',
+                    '__dir__',
+                    '__doc__',
+                    '__eq__',
+                    '__format__',
+                    '__ge__',
+                    '__getattribute__',
+                    '__gt__',
+                    '__hash__',
+                    '__init__',
+                    '__init_subclass__',
+                    '__le__',
+                    '__lt__',
+                    '__module__',
+                    '__ne__',
+                    '__new__',
+                    '__reduce__',
+                    '__reduce_ex__',
+                    '__repr__',
+                    '__setattr__',
+                    '__sizeof__',
+                    '__str__',
+                    '__subclasshook__',
+                    '__weakref__',
+                    'copy',
+                    'global_dry_run',
+                    'host',
+                    'is_dry_run',
+                    'name',
+                    'nornir',
+                    'params',
+                    'parent_task',
+                    'processors',
+                    'results',
+                    'run',
+                    'severity_level',
+                    'start',
+                    'task'],
+  'task name': 'examine task',
+  'task type': <class 'nornir.core.task.Task'>}
+---- examine result ** changed : False ----------------------------------------- INFO
+{ 'result': MultiResult: [Result: "examine task"],
+  'result methods': [ '__abstractmethods__',
+                      '__add__',
+                      '__args__',
+                      '__class__',
+                      '__contains__',
+                      '__delattr__',
+                      '__delitem__',
+                      '__dict__',
+                      '__dir__',
+                      '__doc__',
+                      '__eq__',
+                      '__extra__',
+                      '__format__',
+                      '__ge__',
+                      '__getattr__',
+                      '__getattribute__',
+                      '__getitem__',
+                      '__gt__',
+                      '__hash__',
+                      '__iadd__',
+                      '__imul__',
+                      '__init__',
+                      '__init_subclass__',
+                      '__iter__',
+                      '__le__',
+                      '__len__',
+                      '__lt__',
+                      '__module__',
+                      '__mul__',
+                      '__ne__',
+                      '__new__',
+                      '__next_in_mro__',
+                      '__orig_bases__',
+                      '__origin__',
+                      '__parameters__',
+                      '__reduce__',
+                      '__reduce_ex__',
+                      '__repr__',
+                      '__reversed__',
+                      '__rmul__',
+                      '__setattr__',
+                      '__setitem__',
+                      '__sizeof__',
+                      '__slots__',
+                      '__str__',
+                      '__subclasshook__',
+                      '__tree_hash__',
+                      '__weakref__',
+                      '_abc_cache',
+                      '_abc_generic_negative_cache',
+                      '_abc_generic_negative_cache_version',
+                      '_abc_negative_cache',
+                      '_abc_negative_cache_version',
+                      '_abc_registry',
+                      '_gorg',
+                      'append',
+                      'changed',
+                      'clear',
+                      'copy',
+                      'count',
+                      'extend',
+                      'failed',
+                      'index',
+                      'insert',
+                      'name',
+                      'pop',
+                      'raise_on_error',
+                      'remove',
+                      'reverse',
+                      'sort'],
+  'task type': nornir.core.task.MultiResult}
+vvvv example command using NAPALM ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvv INFO
+MultiResult: [Result: "napalm_cli"]
+---- napalm_cli ** changed : False --------------------------------------------- INFO
+{ 'show hostname': 'Hostname: veos01\nFQDN:     veos01\n',
+  'show version': ' vEOS\n'
+                  'Hardware version:      \n'
+                  'Serial number:         \n'
+                  'Hardware MAC address:  444c.a809.182b\n'
+                  'System MAC address:    444c.a809.182b\n'
+                  '\n'
+                  'Software image version: 4.24.1.1F\n'
+                  'Architecture:           i686\n'
+                  'Internal build version: 4.24.1.1F-17172302.42411F\n'
+                  'Internal build ID:      '
+                  'cf3ba327-e192-46b4-8e8e-4aeaee798dd2\n'
+                  '\n'
+                  'Uptime:                 12 weeks, 4 days, 13 hours and 19 '
+                  'minutes\n'
+                  'Total memory:           1872580 kB\n'
+                  'Free memory:            1072560 kB\n'
+                  '\n'}
+^^^^ END example command using NAPALM ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+vvvv example using NAPALM getters ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvv INFO
+MultiResult: [Result: "napalm_get"]
+---- napalm_get ** changed : False --------------------------------------------- INFO
+{ 'get_facts': { 'fqdn': 'veos01',
+                 'hostname': 'veos01',
+                 'interface_list': [ 'Ethernet1',
+                                     'Loopback0',
+                                     'Management1',
+                                     'Port-Channel1000',
+                                     'Vlan4094'],
+                 'model': 'vEOS',
+                 'os_version': '4.24.1.1F-17172302.42411F',
+                 'serial_number': '',
+                 'uptime': 7648435,
+                 'vendor': 'Arista'}}
+^^^^ END example using NAPALM getters ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+vvvv example configuration using NAPALM ** changed : False vvvvvvvvvvvvvvvvvvvvv INFO
+MultiResult: [Result: "napalm_configure"]
+---- napalm_configure ** changed : True ---------------------------------------- INFO
+@@ -51,6 +51,7 @@
+    ipv6 enable
+ !
+ interface Loopback0
++   description Nornir
+    ip address 5.5.5.5/32
+ !
+ interface Management1
+^^^^ END example configuration using NAPALM ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^ END Task example and explanation function. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
