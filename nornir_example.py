@@ -42,8 +42,12 @@ from nornir_netmiko.tasks import netmiko_send_command
 
 logger = logging.getLogger('nornir')
 
+template_string = """
+interface loopback 0
+description Nornir
+"""
     
-def main_task(task: Task, example_arg_1, example_arg_2) -> Result:
+def main_task(task: Task, example_arg_1, example_arg_2, template_string) -> Result:
     """
     This is the main task or function of the program. 
     
@@ -77,7 +81,7 @@ def main_task(task: Task, example_arg_1, example_arg_2) -> Result:
         name="example command using NAPALM",
         task=example_command_using_napalm,
     )
-
+    
     task.run(
         name="example using NAPALM getters",
         task=example_napalm_getters,
@@ -86,8 +90,9 @@ def main_task(task: Task, example_arg_1, example_arg_2) -> Result:
     task.run(
         name="example configuration using NAPALM",
         task=example_napalm_configure,
-    )   
-    
+        template_string=template_string,        
+    )
+
     return Result(
         host=task.host,
         result="Example task finished!",
@@ -162,6 +167,7 @@ def example_command_using_napalm(task: Task,) -> Result:
     """
     Send commands using napalm_cli
     """
+    
     cmd_ret = task.run(
         task=napalm_cli, commands=[
             'show version',
@@ -211,7 +217,7 @@ def example_napalm_getters(task: Task,) -> Result:
     )
 
 
-def example_napalm_configure(task: Task,) -> Result:
+def example_napalm_configure(task: Task, template_string) -> Result:
     """
     Example on how to use the NAPALM to configure devices.
         
@@ -219,7 +225,7 @@ def example_napalm_configure(task: Task,) -> Result:
 
     In this example, Arista EOS is used.
     """
-    template_string = """interface loopback 0\ndescription Nornir"""
+    
     napalm_ret = task.run(
         task=napalm_configure,
         configuration=template_string,
@@ -257,7 +263,7 @@ def get_nornir_cfg():
 
 if __name__ == "__main__":
 
-
+    
     nr = get_nornir_cfg()
 
     result = nr.run(
@@ -265,6 +271,7 @@ if __name__ == "__main__":
         task=main_task,
         example_arg_1="arg_1",
         example_arg_2="arg_2",
+        template_string=template_string
     )
 
     print_result(result)
