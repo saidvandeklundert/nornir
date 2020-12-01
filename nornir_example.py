@@ -221,15 +221,12 @@ def example_napalm_configure(task: Task, template_string) -> Result:
     """
     Example on how to use the NAPALM to configure devices.
         
-    Since dry_run is set to True, this task will only retrieve a diff.
-
-    In this example, Arista EOS is used.
+    If dry_run is set to True, this task will only retrieve a diff.
     """
     
     napalm_ret = task.run(
         task=napalm_configure,
         configuration=template_string,
-        dry_run=True
     )
     return Result(
         host=task.host,
@@ -271,7 +268,8 @@ if __name__ == "__main__":
         task=main_task,
         example_arg_1="arg_1",
         example_arg_2="arg_2",
-        template_string=template_string
+        template_string=template_string,
+        dry_run=True
     )
 
     print_result(result)
