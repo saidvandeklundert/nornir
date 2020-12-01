@@ -14,7 +14,7 @@ if __name__ == "__main__":
         runner={
             "plugin": "threaded",
             "options": {
-                "num_workers": 100,
+                "num_workers": 30,
             },
         },
         inventory={
