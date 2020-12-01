@@ -89,8 +89,9 @@ def main_task(task: Task, example_arg_1, example_arg_2, template_string) -> Resu
 
     task.run(
         name="example configuration using NAPALM",
-        task=example_napalm_configure,
+        task=example_napalm_configure,        
         template_string=template_string,        
+        dry_run=dry_run,
     )
 
     return Result(
@@ -217,7 +218,7 @@ def example_napalm_getters(task: Task,) -> Result:
     )
 
 
-def example_napalm_configure(task: Task, template_string) -> Result:
+def example_napalm_configure(task: Task, template_string, dry_run=True) -> Result:
     """
     Example on how to use the NAPALM to configure devices.
         
@@ -226,6 +227,7 @@ def example_napalm_configure(task: Task, template_string) -> Result:
     
     napalm_ret = task.run(
         task=napalm_configure,
+        dry_run=dry_run,
         configuration=template_string,
     )
     return Result(
