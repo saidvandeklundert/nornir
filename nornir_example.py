@@ -47,7 +47,7 @@ interface loopback 0
 description Nornir
 """
     
-def main_task(task: Task, example_arg_1, example_arg_2, template_string) -> Result:
+def main_task(task: Task, example_arg_1, example_arg_2, template_string, dry_run=True) -> Result:
     """
     This is the main task or function of the program. 
     
