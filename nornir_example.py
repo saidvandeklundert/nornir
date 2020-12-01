@@ -251,9 +251,9 @@ def get_nornir_cfg():
         inventory={
             "plugin": "SimpleInventory",
             "options": {
-                    "host_file": "/opt/prelude/inventory/hosts_eos_virt.yaml",
-                    "group_file": "/opt/prelude/inventory/groups.yaml",
-                    "defaults_file": "/opt/prelude/inventory/defaults_virt.yaml"
+                    "host_file": "/inventory/hosts_eos_virt.yaml",
+                    "group_file": "/inventory/groups.yaml",
+                    "defaults_file": "/inventory/defaults_virt.yaml"
             },
         }
     )
