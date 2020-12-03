@@ -28,7 +28,7 @@ cisco_nxos: { platform: nxos, port: 22 }
 --- # defaults:
 username: admin
 password: password
-snmp: snmp
+
 
 """
 import logging
