@@ -1,0 +1,8 @@
+veos01:
+  hostname: 10.254.169.50
+  groups:
+    - arista_eapi
+veos02:
+  hostname: 10.254.169.51
+  groups:
+    - arista_eapi
